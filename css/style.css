@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../Roboto/Roboto-Regular.ttf);
+}
+.tittle{
+    margin: 50px 0;
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+}
+.container{
+    width: 1200px;
+    height: 500px;
+    margin: 50px auto;
+}
+.container .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container  .row .col{
+    width: calc(1140px / 4);
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container  .row .col .image{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+.container  .row .col .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    top: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socail-group a{
+    color: black;
+    font-size: 20px;
+}
+.container  .row .col .image .socail-group .icon-1{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group .icon-2{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group .icon-3{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group .icon-4{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group .icon-5{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.534);
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group:hover .icon-1{
+    bottom: 100%;
+    right: 20%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group:hover .icon-2{
+    bottom: 15%;
+    right: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group:hover .icon-3{
+    top: 100%;
+    right: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group:hover .icon-4{
+    top: 75%;
+    left: 80%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.container  .row .col .image .socail-group:hover .icon-5{
+    bottom: 60%;
+    left: 90%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+/* ===location=== */
+.image .location{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    border-radius: 20px;
+}
+/* ====detail==== */
+
+.detail{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(242,242,242);
+    padding: 20px;
+}
+.detail .detail-name{
+    color: rgb(0,0,139);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.col-price{
+    font-weight: bold;
+    color: rgb(1,93,70);
+}
+.col-price span{
+    font-weight: normal;
+}
+.col-rate{
+    color: rgb(1,93,70);
+}
+.col-rate i{
+    color: gold;
+}
+/* ====hover--==== */
+.container  .row .col:hover .detail-name{
+    color: mediumblue;
+}
+.container  .row .col:hover img{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
